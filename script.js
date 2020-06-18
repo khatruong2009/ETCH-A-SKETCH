@@ -25,7 +25,11 @@ function grid(num) {
    gridBox.forEach(gridBox => {
    gridBox.classList.remove("hovered");
    })
-   
+  })
+
+  let reset = document.querySelector(".reset");
+  reset.addEventListener("click", function() {
+   location.reload();
   })
 
 };
