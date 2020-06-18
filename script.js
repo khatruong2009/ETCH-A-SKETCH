@@ -1,8 +1,9 @@
 let container = document.querySelector(".grid-container");
 
-let num = prompt("How many rows and columns would you like?");
+let num;
 
 function grid(num) {
+ num = prompt("How many rows and columns would you like?")
  container.style.setProperty("--grid-rows", num);
  container.style.setProperty("--grid-cols", num);
 
@@ -22,8 +23,9 @@ function grid(num) {
  let btn = document.querySelector(".btn");
  btn.addEventListener("click", function() {
    gridBox.forEach(gridBox => {
-    gridBox.classList.remove("hovered");
+   gridBox.classList.remove("hovered");
    })
+   
   })
 
 };
