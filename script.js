@@ -34,7 +34,7 @@ function grid(num) {
 
 };
 
-grid(num);
+grid(10);
 
 
 
